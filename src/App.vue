@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <MyHeader />
     <!-- header -->
 
     <!-- main -->
@@ -16,7 +16,7 @@ import MyHeader from './components/MyHeader.vue'
 export default {
   name: 'App',
   components: {
-    MyHeader
+   MyHeader
   }
 }
 </script>
