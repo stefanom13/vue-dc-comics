@@ -1,19 +1,17 @@
 <template>
-  <div class="header">
-    header
+  <div class="">
+    main
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MyHeader',
+  name: 'MyMain',
     
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss" >
-   .header {
-       min-height: 100px;
-   }
+<style scoped lang="scss"  >
+
 </style>
