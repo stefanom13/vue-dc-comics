@@ -11,11 +11,11 @@
       <nav class="nav-link">
 
         <ul>
-          <li class="nav-item">
-            <a href="#">caratteri</a>
+          <li v-for="(link,i) in links" :key="i" class="nav-item">
+            <a class="active" href="#">{{link.text}}</a>
           </li>
         </ul>
-        
+
       </nav>
 
     </div>
@@ -24,8 +24,52 @@
 
 <script>
 export default {
-  name: 'MyHeader',
-    
+  data(){
+    return {
+      links: [
+        {
+          text: "Character",
+          href: "#"
+        },
+        {
+          text: "Comics",
+          href: "#"
+        },
+        {
+          text: "Movies",
+          href: "#"
+        },
+        {
+          text: "Tv",
+          href: "#"
+        },
+        {
+          text: "Games",
+          href: "#"
+        },
+        {
+          text: "Collectibles",
+          href: "#"
+        },
+        {
+          text: "Videos",
+          href: "#"
+        },
+        {
+          text: "Fans",
+          href: "#"
+        },
+        {
+          text: "News",
+          href: "#"
+        },
+        {
+          text: "Shop",
+          href: "#"
+        },
+      ]
+    }
+  }  
 }
 </script>
 
@@ -37,11 +81,11 @@ export default {
     .container{
       display: flex;
       justify-content: space-between;
-      min-height: 110px;
 
         .logo{
           align-self: center;
-          width:85px;
+          max-width: 85px;
+          min-width:85px;
         }
         .nav-link{
           display: flex;
@@ -51,11 +95,25 @@ export default {
            ul{
              display:contents;
            }
-        }
-        
-    }
+           .nav-item{
+              min-height: 110px;
+              text-transform: uppercase;
+              font-weight: 600;
+              font-size: 12px;
 
+             a{
+               display:flex;
+               height:100%;
+               align-items: center;
+             }
 
+             a:hover{
+                border-bottom: 3px solid #0282F9;
+                border-top: 3px solid transparent;
+             }
+           }
+        }  
+      }
 
   }
  
