@@ -2,19 +2,27 @@
   <div class="My-main">
 
     <section class="jumbotron">
-
     </section>
 
     <section id="contents">
       <div class="container">
+        <button class="but buttonSeries">Current Series</button>
+      </div>
+      <div class="container">
 
-       <div class="comics-wrapper">
-        <ComicCard class="gridItems" v-for="(comic,index) in comics" 
-        :key="index"
-        :srcThumb="comic.thumb" 
-        :title="comic.series"   
-        />
-       </div>
+        <div class="comics-wrapper">
+
+          <ComicCard class="gridItems" v-for="(comic,index) in comics" 
+          :key="index"
+          :srcThumb="comic.thumb" 
+          :title="comic.series"   
+          />
+
+        </div>
+        <div class="cont-but">
+          <button class="but button">Load More</button>
+        </div>
+        
 
       </div>
     </section>
@@ -123,18 +131,44 @@ export default {
   #contents{
     background-color:#1c1c1c;
     color:whitesmoke;
-    padding:25px 0px;
     font-size:30px;
+
+    .container{
+      // padding:15px 0px;
+    }
 
       .comics-wrapper{
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
       }
 
       .gridItems{
         width: 15%;
         flex-grow: 1;
+      }
+      .cont-but{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding:10px;
+
+          .button{
+            padding: 5px 25px;
+            border: none;
+          }
+      }
+
+      .buttonSeries{
+        padding:10px;
+        
+      }
+      .but{
+        background-color: #0282F9;
+        color:whitesmoke;
+        font-size:15px;
+        text-transform: uppercase;
+
       }
     
   }

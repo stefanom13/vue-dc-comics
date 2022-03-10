@@ -41,8 +41,7 @@ export default {
         }
         .comicTitle{
             text-transform: uppercase;
-            font-size: 12px;
-            height:20px;
+            font-size: 16px;
             color:white
         }
             
