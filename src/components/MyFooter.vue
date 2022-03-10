@@ -25,7 +25,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <!-- second col -->
                 <div class="col">
 
@@ -62,19 +61,40 @@
                     </div>
 
                 </div>
+
             </div>
         </section>
 
+        <!-- footer social   -->
         <section class="footer-social">
             <div class="container">
-                <button>sign-up</button>
+                <button  class="butSign-up"><a href="#">Sign-up Now!</a></button>
 
                 <div class="link-social">
                     
-                    <span>follow us</span>
-                    <ul>
-                        <li>social</li>
+                    <span class="F-us">follow us</span>
+                  
+                    <ul class="wrapSocial">
+
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                        </li>
+
                     </ul>
+                    
+
                 </div>
             </div>
         </section>
@@ -93,12 +113,16 @@ export default {
   color: white;
 
   .head-footer {
-    background: url("../assets/img/footer-bg.jpg");
-    // min-height: 300px;
-    padding:20px 0px;
-        
+    background:url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;        
         .container{
             display: flex;
+            background: url("../assets/img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding:20px 0px;
 
             .col{
                 width: calc(100% / 9);
@@ -110,18 +134,56 @@ export default {
                                 cursor: pointer;
                             }
                     }
+               
                 
             }
         }
     }
+
+    // <!-- footer social   -->
     .footer-social {
-        // display: flex;
+        padding:20px 0;
         background-color: #303030;
+      
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+
+            .butSign-up{
+                padding:8px;
+                color:white;
+                background-color:#303030;
+                border:2px solid #0282F9;
+                text-transform: uppercase;
+                font-size:22px;
+            }
+        }
     }
 
     .link-social {
         background-color: #303030;
         display: flex;
+        align-items: center;
+        gap:25px;
+
+            .F-us{
+                color: #0282F9;
+                text-transform: uppercase;
+                font-size:22px;
+
+            }
+            .wrapSocial{
+                display: flex;
+                align-items: center;
+                gap:15px;
+
+                li{
+                    width:30px;
+                }
+            }
+            
     }
 }
 </style>
