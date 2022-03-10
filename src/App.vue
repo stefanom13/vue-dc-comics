@@ -29,7 +29,7 @@ export default {
    MyHeader,
    MyMain,
    MyFooter,
-    MyCategories,
+   MyCategories,
   }
 }
 </script>
