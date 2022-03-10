@@ -37,6 +37,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'League Gothic', sans-serif;
 }
 
 img {
@@ -58,4 +59,8 @@ a{
 .container{
   @include container;
 }
+.widget{
+  @include widget;
+}
+
 </style>

@@ -98,8 +98,8 @@ export default {
            .nav-item{
               min-height: 110px;
               text-transform: uppercase;
-              font-weight: 600;
-              font-size: 12px;
+              
+              font-size: 18px;
 
              a{
                display:flex;

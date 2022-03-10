@@ -29,9 +29,10 @@ export default {
   #contents{
     background-color:#1c1c1c;
     color:whitesmoke;
-    min-height: 65px;
-    line-height:65px;
-    font-size:20px;
+    min-height: 85px;
+    line-height:85px;
+    font-size:30px;
+    
     
   }
   #categories{

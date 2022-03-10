@@ -2,3 +2,21 @@
     max-width: 1024px;
     margin: 0 auto;
 }
+
+@mixin widget {
+    margin-bottom:8px;
+    .titleWidget{
+        text-transform:uppercase;
+        font-weight:500px;
+        margin-bottom:8px;
+        font-size:22px;
+    }
+    .list_widget{
+        // color: #959595;
+
+            li{
+                padding:3px 0px ;
+                font-size:14px;
+            }
+    }
+}
