@@ -108,8 +108,8 @@ export default {
              }
 
              a:hover{
-                border-bottom: 3px solid #0282F9;
-                border-top: 3px solid transparent;
+                border-bottom: 4px solid #0282F9;
+                border-top: 4px solid transparent;
              }
            }
         }  

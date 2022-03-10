@@ -3,7 +3,7 @@
 
     <section id="contents">
       <div class="container">
-        contenuto
+       --> Contents goes here -->
       </div>
     </section>
     
@@ -28,7 +28,11 @@ export default {
 
   #contents{
     background-color:#1c1c1c;
-    color:whitesmoke
+    color:whitesmoke;
+    min-height: 65px;
+    line-height:65px;
+    font-size:20px;
+    
   }
   #categories{
     background-color:#0282F9;
