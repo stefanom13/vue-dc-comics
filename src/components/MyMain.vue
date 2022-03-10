@@ -7,7 +7,15 @@
 
     <section id="contents">
       <div class="container">
-       --> Contents goes here -->
+
+       <div class="comics-wrapper">
+        <ComicCard class="gridItems" v-for="(comic,index) in comics" 
+        :key="index"
+        :srcThumb="comic.thumb" 
+        :title="comic.series"   
+        />
+       </div>
+
       </div>
     </section>
     
@@ -15,7 +23,12 @@
 </template>
 
 <script>
+import ComicCard from './ComicCard.vue'
+
 export default {
+  components: {
+    ComicCard,
+  },
   data(){
     return {
       comics: [
@@ -102,7 +115,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss"  >
   .jumbotron {
-    min-height:300px;
+    min-height:350px;
     background: url("../assets/img/jumbotron.jpg");
     background-position: top center;
     background-size: cover;
@@ -110,10 +123,19 @@ export default {
   #contents{
     background-color:#1c1c1c;
     color:whitesmoke;
-    min-height: 85px;
-    line-height:85px;
+    padding:25px 0px;
     font-size:30px;
-    
+
+      .comics-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .gridItems{
+        width: 15%;
+        flex-grow: 1;
+      }
     
   }
 
