@@ -7,12 +7,6 @@
       </div>
     </section>
     
-    <section id="categories">
-      <div class="container">
-        li
-      </div>
-    </section>
-
   </div>
 </template>
 
@@ -35,9 +29,6 @@ export default {
     
     
   }
-  #categories{
-    background-color:#0282F9;
-    color:whitesmoke
-  }
+
 
 </style>

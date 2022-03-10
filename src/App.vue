@@ -7,6 +7,9 @@
     <MyMain />
     <!-- main -->
 
+    <MyCategories />
+    <!-- categories -->
+
     <MyFooter />
     <!-- footer  -->
 
@@ -18,6 +21,7 @@
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
 import MyFooter from './components/MyFooter.vue'
+import MyCategories from './components/MyCategories.vue'
 
 export default {
   name: 'App',
@@ -25,6 +29,7 @@ export default {
    MyHeader,
    MyMain,
    MyFooter,
+    MyCategories,
   }
 }
 </script>

@@ -152,12 +152,12 @@ export default {
             justify-content:space-between;
 
             .butSign-up{
-                padding:8px;
+                padding:8px 10px;
                 color:white;
                 background-color:#303030;
                 border:2px solid #0282F9;
                 text-transform: uppercase;
-                font-size:22px;
+                font-size:20px;
             }
         }
     }
