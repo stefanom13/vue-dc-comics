@@ -134,7 +134,16 @@ export default {
     font-size:30px;
 
     .container{
-      // padding:15px 0px;
+      padding:15px 0px;
+      position: relative;
+
+        .buttonSeries{
+        padding:10px 15px;
+        position: absolute;
+        top: 0;
+        transform:translatey(-50%)
+        
+      }
     }
 
       .comics-wrapper{
@@ -159,10 +168,6 @@ export default {
           }
       }
 
-      .buttonSeries{
-        padding:10px;
-        
-      }
       .but{
         background-color: #0282F9;
         color:whitesmoke;
